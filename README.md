@@ -18,10 +18,10 @@ This extractor script is based on the bundled "Pretty" extractor script. It adds
 SELECT
     *
 FROM (
-         VALUES (1, 'one', CURRENT_TIMESTAMP, TRUE),
-                (2, 'two', CURRENT_TIMESTAMP, FALSE),
-                (3, 'three', CURRENT_TIMESTAMP, TRUE)
-     ) AS t (num, txt, ts, bool);
+         VALUES (1, 'one', CURRENT_TIMESTAMP, TRUE, 'a'),
+                (2, 'two', CURRENT_TIMESTAMP, FALSE, 'b'),
+                (3, 'three', CURRENT_TIMESTAMP, TRUE, 'c')
+     ) AS t (num, txt, ts, bool,long_column_name_with_tiny_value);
 ```
 
 With *built in* "Pretty" extractor:
